@@ -27,6 +27,7 @@ export interface HomeProps {
 export default function Home({ data }: HomeProps) {
   return <Layout>
     <Helmet>
+      <html lang="en" />
       <meta charSet="utf-8" />
       <title>Joey Watts</title>
       <meta name="description" content="Software Engineer" />
