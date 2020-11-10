@@ -23,8 +23,7 @@ export function Container({ style, children }: ContainerProps) {
         display: "flex",
         flexDirection: "column",
         flex: 1,
-        overflow: "scroll",
-        maxHeight: "100vh"
-        //maxWidth: 650
+        maxHeight: "100vh",
+        overflow: "auto"
     }}>{children}</div>);
 }

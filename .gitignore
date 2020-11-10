@@ -58,7 +58,7 @@ tsconfig.tsbuildinfo
 # gatsby files
 .cache/
 public
-src/generated/
+generated/
 
 # Mac files
 .DS_Store
