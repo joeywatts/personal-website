@@ -3,7 +3,7 @@
     "incremental": true,
     "target": "esnext",
     "noEmit": true,
-    "rootDir": "src/",
+    "rootDir": "./",
     "module": "commonjs",
     "esModuleInterop": true,
     "strict": true,

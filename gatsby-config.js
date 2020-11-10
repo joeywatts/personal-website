@@ -40,6 +40,7 @@ module.exports = {
       options: {
         logo: "./src/data/favicon.png"
       }
-    }
+    },
+    "gatsby-plugin-css-modules-typings"
   ],
 }

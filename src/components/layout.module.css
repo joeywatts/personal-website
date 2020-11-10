@@ -1,0 +1,15 @@
+.layout {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    overflow-y: auto;
+    flex-basis: 50%;
+    max-height: 100vh;
+}

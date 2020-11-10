@@ -1,14 +1,12 @@
 import React from "react";
 
+import layoutStyles from "./layout.module.css";
+
 export interface LayoutProps {
     children?: React.ReactNode;
 }
 export function Layout({ children }: LayoutProps) {
-    return (<div style={{
-        display: "flex",
-        flexDirection: "row",
-        alignItems: "center",
-    }}>
+    return (<div className={layoutStyles.layout}>
         {children}
     </div>);
 }
@@ -18,12 +16,7 @@ export interface ContainerProps {
     children?: React.ReactNode;
 }
 export function Container({ style, children }: ContainerProps) {
-    return (<div style={{
-        ...style,
-        display: "flex",
-        flexDirection: "column",
-        flex: 1,
-        maxHeight: "100vh",
-        overflow: "auto"
-    }}>{children}</div>);
+    return (<div className={layoutStyles.container} style={style}>
+        {children}
+    </div>);
 }

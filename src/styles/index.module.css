@@ -1,0 +1,9 @@
+.hero {
+    min-height: 100vh;
+}
+@media only screen and (max-width: 1015px) {
+    .hero {
+        max-height: 450px;
+        min-height: 0;
+    }
+}

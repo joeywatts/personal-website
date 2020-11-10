@@ -6,6 +6,8 @@ import { graphql } from "gatsby";
 import Img, { FluidObject } from "gatsby-image";
 import { HomeQuery } from "../../generated/graphql-types";
 
+import indexStyles from "../styles/index.module.css";
+
 export const query = graphql`
   query Home {
     file (relativePath: { eq: "profile-photo.jpg" }) {
@@ -23,16 +25,17 @@ export interface HomeProps {
 }
 export default function Home({ data }: HomeProps) {
   return <Layout>
-    <Container style={{ minHeight: "100vh" }}>
+    <Container style={{ flex: "1 3 35%" }}>
       <Img fluid={data.file!.childImageSharp!.fluid as FluidObject}
           style={{ flex: 1 }}
+          className={indexStyles.hero}
           imgStyle={{
             objectFit: "cover",
-            objectPosition: "0% 50%"
+            objectPosition: "0% 33%"
           }}
           alt="Joey Watts picking an apple from a tree." />
     </Container>
-    <Container style={{ alignItems: "center", padding: `0 1rem` }}>
+    <Container style={{ flex: "1 1 650px", alignItems: "center", padding: `0 1rem` }}>
       <div style={{ maxWidth: 650 }}>
         <h1>Hello, I'm Joey.</h1>
         <p>
