@@ -34,6 +34,12 @@ module.exports = {
       options: {
         fileName: "src/generated/graphql-types.ts"
       }
+    },
+    {
+      resolve: "gatsby-plugin-favicon",
+      options: {
+        logo: "./src/data/favicon.png"
+      }
     }
   ],
 }
