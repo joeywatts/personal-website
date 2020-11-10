@@ -1,4 +1,5 @@
 import React from "react"
+import { Helmet } from "react-helmet";
 
 import { Layout, Container } from "../components/layout";
 
@@ -25,6 +26,18 @@ export interface HomeProps {
 }
 export default function Home({ data }: HomeProps) {
   return <Layout>
+    <Helmet>
+      <meta charSet="utf-8" />
+      <title>Joey Watts</title>
+      <meta name="description" content="Software Engineer" />
+      <meta property="og:url" content="https://jwatts.me" />
+      <meta property="og:title" content="Joey Watts" />
+      <meta property="og:description" content="Software Engineer" />
+      <meta name="twitter:card" content="summary_large_image" />
+      <meta name="twitter:creator" content="@joeywatts96" />
+      <meta name="twitter:title" content="Joey Watts" />
+      <meta name="twitter:description" content="Software Engineer" />
+    </Helmet>
     <Container style={{ flex: "1 3 35%" }}>
       <Img fluid={data.file!.childImageSharp!.fluid as FluidObject}
           style={{ flex: 1 }}
