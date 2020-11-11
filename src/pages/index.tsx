@@ -39,7 +39,7 @@ export default function Home({ data }: HomeProps) {
       <meta name="twitter:title" content="Joey Watts" />
       <meta name="twitter:description" content="Software Engineer" />
     </Helmet>
-    <Container style={{ flex: "1 3 35%" }}>
+    <Container style={{ flex: "1 3 35%", maxWidth: 3042 / 2 }}>
       <Img fluid={data.file!.childImageSharp!.fluid as FluidObject}
           style={{ flex: 1 }}
           className={indexStyles.hero}
